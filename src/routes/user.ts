@@ -1,11 +1,10 @@
 // src/index.ts
 
 import express, { Request, Response } from 'express';
-import prisma from './prisma';
+import { PrismaClient } from '@prisma/client';
 import * as queryString from 'query-string';
 import axios from 'axios'
-import { PrismaClient } from '@prisma/client';
-import jwt from 'jsonwebtoken'
+// import jwt from 'jsonwebtoken'
 // import { IGetUserAuthInfoRequest } from "../req"
 import { authenticateToken } from '../middlewares/auth'
 
@@ -18,8 +17,10 @@ type NoUser = {};
 type GetUser = (id: string) => User | NoUser;
 
 userRoute.get('/users', async (req: Request, res: Response): Promise<void> => {
+    console.log("usersusers")
     const users = await prisma.user.findMany();
-        res.json(users);
+    // res.status(201);
+    res.status(500).json({ error: 'Internal server error' });
 });
 // app.use(express.json());
 
