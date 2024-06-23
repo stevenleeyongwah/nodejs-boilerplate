@@ -1,23 +1,5 @@
-Query 1 execution time: 1.84 ms
-Query 2 execution time: 1.72 ms
-Query 3 execution time: 1.25 ms
-Query 4 execution time: 1.46 ms
-Query 5 execution time: 1.38 ms
-Query 6 execution time: 1.54 ms
-Query 7 execution time: 1.52 ms
-Query 8 execution time: 1.50 ms
-Query 9 execution time: 1.40 ms
-Query 10 execution time: 1.35 ms
-Average execution time (indexes): 1.50 ms
+Features:
+i) Role based access control
 
-Query 1 execution time: 1.77 ms
-Query 2 execution time: 1.58 ms
-Query 3 execution time: 1.43 ms
-Query 4 execution time: 1.33 ms
-Query 5 execution time: 1.68 ms
-Query 6 execution time: 1.53 ms
-Query 7 execution time: 1.44 ms
-Query 8 execution time: 1.56 ms
-Query 9 execution time: 1.37 ms
-Query 10 execution time: 1.29 ms
-Average execution time (without indexes): 1.50 ms
+How to migrate?
+npx prisma migrate dev --name
