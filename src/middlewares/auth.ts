@@ -2,6 +2,7 @@ import jwt, { Secret, JwtPayload } from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 
 export const authenticateToken = async (req: any, res: any, next: any) => {
+  console.log("authenticateToken")
   const authHeader = req.headers['authorization']
   const token = authHeader && authHeader.split(' ')[1]
 

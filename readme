@@ -2,4 +2,7 @@ Features:
 i) Role based access control
 
 How to migrate?
-npx prisma migrate dev --name
+- npx prisma migrate dev --name
+
+How to run dev env?
+- npm run dev
